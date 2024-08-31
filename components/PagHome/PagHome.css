@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    padding: 50px;
+    
+}
+.container .divTopo{
+  
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.container .divTopo > div{
+    width: 48%;
+    height: 100%;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 15px;box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 1px solid rgb(203, 203, 203);
+}
+.title-cards{
+    display: flex;
+    align-items: center;
+    
+}
+
+.divLeft > span, .divRigth > span{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+}
+.divLeft > span, .divRigth > span p{
+    font-weight: 600;
+}
+.divLeft > hr, .divRigth > hr{
+    margin: 10px 0;
+}
+.conteudo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 130px;
+}
+.conteudo p{
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(36, 36, 36);
+    
+}
+
+.conteudo h1{
+    font-size: 80px;
+    font-weight: 800;
+    color: #004530;
+}
+
+.cardContasApagar p{
+    padding: 15px;
+  
+    text-align: center;
+    background-color: #cccccc62;
+    font-weight: 700;
+    color: rgb(36, 36, 36);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+/* Estilizando elementos pares */
+.cardContasApagar  p:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilizando elementos ímpares */
+.cardContasApagar  p:nth-child(odd) {
+    background-color: #ffffff;
+}
+.cardContasApagar{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.btn-financeiro {
+    margin-top: 2px;
+    text-decoration: none;
+    color: #fff;
+background-color: #004530;
+text-align: center;
+padding: 8px;
+border-radius: 9px;
+transition: all .3s ease-in-out;
+}
+.btn-financeiro:hover{
+    background-color: green;
+    transition: all .3s ease-in-out;
+}
+
+.detalhes-movimentacoes{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.detalhes-movimentacoes h3{
+    padding: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #004530;
+    width: 100%;
+    color: #fff;
+}
+.conteudo-movimentacoes p{
+    padding: 10px;
+    border: #0000007e solid 1px;
+    text-align: left;
+    font-weight: 500;
+    color: rgb(36, 36, 36);
+}
+/* Estilizando elementos pares */
+.conteudo-movimentacoes p:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilizando elementos ímpares */
+.conteudo-movimentacoes p:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer {
+    font-size: 14px;
+    padding: 30px 0;
+    margin-top: 35px;
+    color: #004530;
+  }
+ 
+  
+  .footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer .credits {
+  
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  .footer .credits a {
+    color: royalblue;
+    font-weight: bold;
+  }
+
+  /* Media Queries */
+
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+    
+    .container .divTopo {
+      flex-direction: column;
+    }
+  
+    .container .divTopo > div {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .conteudo h1 {
+      font-size: 60px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .conteudo h1 {
+      font-size: 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 360px) {
+    .conteudo h1 {
+      font-size: 30px;
+    }
+  }
